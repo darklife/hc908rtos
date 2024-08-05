@@ -31,9 +31,9 @@
 #ifndef RTOS_H
 #define RTOS_H
 
-#define isr_start() _asm cli  _endasm
-#define isr_stop()  _asm sei  _endasm
-#define isr_wait()  _asm wait _endasm
+#define isr_start() __asm cli  __endasm
+#define isr_stop()  __asm sei  __endasm
+#define isr_wait()  __asm wait __endasm
 #define wtd_clean() COPCTL = 1
 
 #ifndef NULL

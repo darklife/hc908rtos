@@ -30,7 +30,7 @@
 
 #include <rtc.h>
 
-void rtc_isr(void) interrupt 17
+void rtc_isr(void) __interrupt(17)
 {
   static struct ipc_msg msg = { NULL, rtc_task, EVENT_READY }; 
 

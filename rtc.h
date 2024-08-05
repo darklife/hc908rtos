@@ -41,7 +41,7 @@ struct rtc_msg
   int day;
 };
 
-extern void rtc_isr(void) interrupt 17;
+extern void rtc_isr(void) __interrupt(17);
 extern void rtc_task();
 
 #endif

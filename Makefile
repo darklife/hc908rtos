@@ -50,4 +50,4 @@ install: $(TARGET)
 	hc908sh /dev/ttyS0 -start -erase -upload $(TARGET) -end
 
 clean:
-	rm -f *.{S19,asm,lnk,lst,map,mem,rel,rst,sym,o}
+	rm -f *.{S19,asm,lnk,lst,map,mem,rel,rst,sym,o,cdb,lk}
